@@ -1,0 +1,623 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+  --orange : #ffa500;
+}
+
+::selection{
+  background: var(--orange);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* navbar */
+.home{
+    display: flex;
+    font-size: 1.5rem;
+    justify-content:space-evenly;
+    height: 10%;
+    background-color: #333;
+    align-items: center;
+    width: 100%;
+    top: 0; left: 0; right: 0;
+    position: fixed;
+}
+
+a{
+    color:white;
+    text-decoration: white underline;
+}
+
+
+/* Sign In button/form */
+#login1{
+  background-color: transparent;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 50vh;
+  width: 23vw;
+  margin-left: 50vw;
+  margin-top: 23vh;
+  border: solid black;
+}
+
+.a{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.b{
+  margin-bottom: 1.5rem;
+}
+
+.login{
+  color: black;
+}
+
+.SIGNIN{
+  padding-top: 2rem;
+  font-size: 1.25rem;
+}
+
+
+.click{
+  color: white;
+  border: none;
+  text-decoration: none;
+  width: 7.5rem;
+  border-radius: 0.75rem;
+}
+
+
+/* currency converter   */
+.container {
+  background-color: transparent;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 50vh;
+  width: 20%;
+  margin-left: 20vw;
+  margin-top: 18vh;
+  border: solid black;
+  }
+  
+  form {
+    margin: 2rem 0 1rem 0;
+  }
+  
+  form select,
+  button,
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+  }
+  
+  form input {
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+  }
+  
+  .dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap:wrap;
+  }
+  
+  .dropdown i {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .select-container img {
+    max-width: 2rem;
+  }
+  
+  .select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+  }
+  
+  .select-container select {
+    font-size: 1rem;
+    width: auto;
+  }
+  
+  .msg {
+    margin: 2rem 0 2rem 0;
+  }
+  
+  form button {
+    height: 3rem;
+    background-color: #af4d98;
+    color: #fff;
+    font-size: 1.15rem;
+    cursor: pointer;
+  }
+
+/* weather insights */
+
+.weatherContainer{
+  background-color: transparent;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 45vh;
+  width: 45vw;
+  border: solid ;
+  margin-left: 42vw;
+  margin-top: 15vh;
+}
+
+.heading{
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.contain{
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.Enter{
+  border: 1px solid lightgray;
+  height: 2rem;
+  font-size: 1rem;
+  color:black;
+  padding-left: 1rem;
+}
+
+.button1{
+  height: 2rem;
+  font-size: 1rem;
+  background-color: #af4d98;
+  color: #fff;
+  width: 10rem;
+}
+
+.temperature{
+  display: flex;
+  padding-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-content:space-evenly;
+}
+
+.temp{
+  font-size: 1.25rem;
+  width: 100rem;
+  color: black;
+}
+
+.feels{
+  font-size: 1.25rem;
+  width: 100rem;
+}
+
+.humidity{
+  font-size: 1.25rem;
+  width: 100rem;
+}
+
+.wind{
+  width: 100rem;
+  font-size: 1.25rem;
+}
+
+.next{
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.days{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.day1{
+  border: solid;
+  text-align: center;
+  padding-top: 0.25rem;
+  width: 10rem;
+  height: 7rem;
+  font-size:  1.25rem;
+}
+
+.day1data , .day2data , .day3data , 
+.day4data , .day5data {
+  resize: vertical;
+  overflow-y: auto;
+  height: 4rem;
+  width: 8rem;
+  margin-top: 0.5rem;
+  font-size: larger;
+  padding-left: 1rem;
+  border: none;
+}
+
+.day2{
+  border: solid;
+  text-align: center;
+  padding-top: 0.25rem;
+  width: 10rem;
+  height: 7rem;
+  font-size: 1.25rem;
+}
+
+.day3{
+  border: solid;
+  text-align: center;
+  padding-top: 0.25rem;
+  width: 10rem;
+  height: 7rem;
+  font-size: 1.25rem;
+}
+
+.day4{
+  border: solid;
+  text-align: center;
+  padding-top: 0.25rem;
+  width: 10rem;
+  font-size: 1.25rem;
+  height: 7rem;
+}
+
+.day5{
+  border: solid;
+  text-align: center;
+  padding-top: 0.25rem;
+  width: 10rem;
+  height: 7rem;
+  font-size: 1.25rem;
+}
+
+
+/* Sign Up form */
+#signup1{
+  background-color: transparent;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 50vh;
+  width: 23vw;
+  margin-left: 50vw;
+  margin-top: 23vh;
+  border: solid black;
+}
+
+.p{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.b{
+  margin-bottom: 1.5rem;
+}
+
+.signing{
+  color: black;
+}
+
+.hide4{
+  display: none;
+}
+
+/* Review form */
+.reviewform{
+  width: 40vw;
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 43vh;
+  margin-left: 10vw;
+  margin-top: 5vh;
+  z-index: 0;
+  display: inline-block;
+  border: solid black;
+  background-color: darkblue;
+}
+
+.ff{
+  font-size: 3rem;
+}
+
+.Feedback{
+  margin-top: 1.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  height: 20vh;
+  resize: vertical;
+  overflow-y: auto;
+  font-size: larger;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.image{
+  height: 5vh;
+}
+
+.hidden{
+  display: none;
+}
+
+/* Explore */
+
+.exploreform , .weatherforecast , 
+.currencyconvertercont , .loginsignupinform ,
+.wishlist{
+  min-height: 100vh;
+}
+
+.explore{
+  width: 40vw;
+  color: black;
+  background-color: transparent;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 43vh;
+  margin-left: 10vw;
+  margin-top: 5vh;
+  z-index: 0;
+  display: inline-block;
+  border: solid ;
+  background-color: darkblue;
+}
+
+.searchbar{
+  width: 33vw;
+  background-color: transparent;
+  margin-left: 10vw;
+  margin-top: 7vh;
+  border: 3px solid ;
+  font-size: larger;
+}
+
+.searchbarbtn{
+  width: 10vw;
+  background-color: transparent;
+  border: 3px solid black;
+  color: black;
+  margin-left: 1vw;
+  height: 3rem;
+}
+
+ .explorebackimage , .weatherbackimage
+ , .currencybackimage , .loginebackimage , .wishlistbackimage{
+  padding-bottom: 0.25rem;
+}
+
+.explorebackimage img , .weatherbackimage img
+ , .currencybackimage img , .loginebackimage img , 
+ .wishlistbackimage img{
+  width: 100%;
+  border-radius: 0.5rem;
+  z-index: -1;
+  position: absolute;
+  object-fit: cover;
+  min-height: 100vh;
+}
+
+.writingwishlist{
+  z-index: 0;
+  display: inline-block;
+  margin-left: 53vw;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-top: 15vh;
+}
+
+.wwishlist{
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.searchedele{
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  text-decoration: underline white;
+}
+
+.contentcreating{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.5vw;
+}
+
+.imageunsplash{
+  height: 30vh;
+  object-fit: contain;
+  width: 50%;
+  margin: 0 0 2rem 0 ;
+}
+
+.aboutsearched{
+  height: 33vh;
+  border: 2px solid;
+  margin: 0 0 2rem 0 ;
+  resize: vertical;
+  overflow-y: auto;
+  width: 50%;
+  padding: 1rem 0 0 1rem;
+  font-size: 2rem;
+  background-color: white;
+}
+
+.reviewbtn{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap:nowrap;
+}
+
+.Read , .Add , .addtocart {
+  background-color: transparent;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: white;
+}
+
+.hidden{
+  display: none;
+}
+
+
+/* public review sheet */
+.publicreview{
+  width: 40vw;
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 43vh;
+  margin-left: 10vw;
+  margin-top: 5vh;
+  z-index: 0;
+  display: inline-block;
+  border: solid black;
+  background-color: darkblue;
+}
+
+.reviewimagebypublic{
+  object-fit: contain;
+  width: 50%;
+  height: 20vh;
+}
+
+.public{
+  margin-top: 1.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  height: 35vh;
+  resize: vertical;
+  overflow-y: auto;
+  font-size: larger;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  border: solid white;
+}
+
+.akshara{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hide5{
+  display: none;
+}
+
+/* Video feature */
+.homeclass{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  z-index: 0;
+}
+
+.homeclass .content{
+  text-align: center;
+}
+
+.adventure{
+  font-size: 2.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0.3rem .5rem rgba( 0 , 0 , 0 , 0.1);
+}
+
+.homeclass .content .discover{
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 0.25rem 0;
+}
+
+.contentclass{
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: var(--orange);
+  color: #fff;
+  padding:  0.25rem;
+  border: 0.5rem solid var(--orange);
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.contentclass:hover{
+  background-color: rgba(255 , 165 , 0 , 0.2);
+  color: var(--orange);
+}
+
+.homeclass .videocont video{
+  position: absolute;
+  top: 0; left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.homeclass .controls{
+  padding: 0.5rem;
+  border-radius: 5rem;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.homeclass .controls .ved{
+  height: 1.5rem;
+  width: 1.5rem;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.homeclass .controls .ved.active{
+  background-color: var(--orange);
+}
+
+/* Wishlist */
+.wishlistlist{
+  background-color: transparent;
+  padding: 0 0 0 0;
+  border-radius: 1rem;
+  min-height: 45vh;
+  width: 45vw;
+  border: solid ;
+  margin-left: 42vw;
+  margin-top: 15vh;
+}
+
+.wishlistcontent{
+  resize: vertical;
+  overflow-y: auto;
+  height: 43vh;
+}
+
+.stopping{
+  color: rgb(85, 179, 85);
+  background-color: transparent;
+}
+
+
